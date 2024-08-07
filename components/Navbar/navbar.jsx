@@ -6,8 +6,11 @@ import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faBars,
+  faCross,
   faMagnifyingGlass,
+  faMessage,
   faPlus,
+  faWifi,
   faXmark,
 } from "@fortawesome/free-solid-svg-icons";
 import { motion } from "framer-motion";
@@ -17,6 +20,8 @@ import {
   faFacebook,
   faInstagram,
   faLinkedin,
+  faMicroblog,
+  faPinterest,
   faTwitter,
   faXTwitter,
   faYoutube,
@@ -24,6 +29,8 @@ import {
 export default function navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [isoption, setIsOption] = useState("");
+  const [issearch, setIsSearch] = useState(false);
+  const [isli, setIsLi] = useState(false);
 
   const handleOption = (option) => {
     if (isoption === option) {
@@ -37,6 +44,34 @@ export default function navbar() {
   return (
     <>
       <div className="bg-[#101010] w-full h-14 flex border-b-[1px] border-white border-opacity-20 ">
+        {issearch && (
+          <div className="fixed top-0 right-0 overflow-y-hidden w-screen h-screen bg-[#333232] z-10 opacity-90">
+            <div
+              onClick={() => setIsSearch(false)}
+              className="flex w-full justify-end pt-20 pr-16"
+            >
+              <FontAwesomeIcon
+                icon={faXmark}
+                className="w-10 h-10 text-white hover:text-red-500 hover:cursor-pointer"
+              ></FontAwesomeIcon>
+            </div>
+
+            <div className="flex justify-center  w-full h-full ">
+              <div className="w-[60%] flex mt-40 pb-2 lg:pb-8 gap-5 lg:gap-20 justify-start h-fit border-b-2 border-red-500  ">
+                <FontAwesomeIcon
+                  icon={faMagnifyingGlass}
+                  className="w-5 h-5 lg:w-10 lg:h-10 mt-12 lg:mt-10 text-red-500 hover:cursor-pointer"
+                ></FontAwesomeIcon>
+
+                <input
+                  type="text"
+                  placeholder="Search MUO"
+                  className="w-[95%] lg:w-1/2 h-28 text-lg lg:text-5xl xl:text-7xl placeholder:text-white outline-none border-none bg-transparent text-white "
+                ></input>
+              </div>
+            </div>
+          </div>
+        )}
         <div
           onClick={() => setIsOpen(!isOpen)}
           className=" w-auto min-w-[33.33%] flex items-center"
@@ -112,7 +147,10 @@ export default function navbar() {
       >
         <div className="w-full h-[145vh]  flex flex-col px-6 py-6  md:px-10 md:py-10">
           <div className="flex justify-center items-center ">
-            <div className="w-1/2  h-full flex items-start pt-2">
+            <div
+              onClick={() => setIsSearch(true)}
+              className="w-1/2  h-full flex items-start pt-2"
+            >
               <FontAwesomeIcon
                 className="w-[25px] h-[25px] ml-2 hover:cursor-pointer"
                 icon={faMagnifyingGlass}
@@ -135,7 +173,10 @@ export default function navbar() {
             </div>
             <div className="w-1/2 flex justify-end h-full pr-2 mt-3">
               <motion.div
-                animate={{ rotate: isoption === "first" ? -45 : 0 , type: "tween" }}
+                animate={{
+                  rotate: isoption === "first" ? -45 : 0,
+                  type: "tween",
+                }}
                 onClick={() => {
                   handleOption("first");
                 }}
@@ -169,7 +210,7 @@ export default function navbar() {
             </div>
           )}
 
-          <div id="li" className="flex pl-2  h-16 w-full">
+          <div id="li" className="flex pl-2  min-h-16 h-auto w-full">
             <div className="w-1/2">
               <p className="text-2xl mt-7 text-nowrap border-b-2 border-transparent hover:border-red-600 hover:cursor-pointer w-fit ">
                 INTERNET
@@ -177,11 +218,14 @@ export default function navbar() {
             </div>
             <div className="w-1/2 flex justify-end h-full pr-2 mt-3">
               <motion.div
-                animate={{ rotate: isoption === "second" ? -45 : 0 , type: "tween" }}
+                animate={{
+                  rotate: isoption === "second" ? -45 : 0,
+                  type: "tween",
+                }}
                 onClick={() => {
                   handleOption("second");
                 }}
-                className="flex items-center justify-center"
+                className="flex items-center h-16  justify-center"
                 style={{ transformOrigin: "center" }}
               >
                 <FontAwesomeIcon
@@ -202,11 +246,10 @@ export default function navbar() {
               <p className="border-b-[1px] border-transparent hover:border-red-500 w-fit hover:cursor-pointer">
                 Programming
               </p>
-              
             </div>
           )}
 
-          <div id="li" className="flex pl-2  h-16 w-full">
+          <div id="li" className="flex pl-2  min-h-16 h-auto w-full">
             <div className="w-1/2">
               <p className="text-2xl mt-7 text-nowrap border-b-2 border-transparent hover:border-red-600 hover:cursor-pointer w-fit ">
                 PRODUCTIVITY
@@ -214,8 +257,10 @@ export default function navbar() {
             </div>
             <div className="w-1/2 flex justify-end h-full pr-2 mt-3">
               <motion.div
-                animate={{ rotate: isoption === "third" ? -45 : 0 , type: "tween" }}
-                
+                animate={{
+                  rotate: isoption === "third" ? -45 : 0,
+                  type: "tween",
+                }}
                 onClick={() => {
                   handleOption("third");
                 }}
@@ -237,7 +282,6 @@ export default function navbar() {
               <p className="border-b-[1px] border-transparent hover:border-red-500 w-fit hover:cursor-pointer ">
                 DIY
               </p>
-              
             </div>
           )}
 
@@ -249,8 +293,10 @@ export default function navbar() {
             </div>
             <div className="w-1/2 flex justify-end h-full pr-2 mt-3">
               <motion.div
-                animate={{ rotate: isoption === "four" ? -45 : 0 , type: "tween" }}
-              
+                animate={{
+                  rotate: isoption === "four" ? -45 : 0,
+                  type: "tween",
+                }}
                 onClick={() => {
                   handleOption("four");
                 }}
@@ -275,7 +321,6 @@ export default function navbar() {
               <p className="border-b-[1px] border-transparent hover:border-red-500 w-fit hover:cursor-pointer">
                 Entertainment
               </p>
-             
             </div>
           )}
 
@@ -287,8 +332,10 @@ export default function navbar() {
             </div>
             <div className="w-1/2 flex justify-end h-full pr-2 mt-3">
               <motion.div
-                animate={{ rotate: isoption === "five" ? -45 : 0 , type: "tween" }}
-            
+                animate={{
+                  rotate: isoption === "five" ? -45 : 0,
+                  type: "tween",
+                }}
                 onClick={() => {
                   handleOption("five");
                 }}
@@ -305,7 +352,7 @@ export default function navbar() {
           {isoption === "five" && (
             <div className="w-full pl-2 text-sm gap-3 mt-2 font-bold  text-red-600 flex flex-col">
               <p className="border-b-[1px] border-transparent hover:border-red-500 w-fit hover:cursor-pointer ">
-                Artifical intelligence 
+                Artifical intelligence
               </p>
               <p className="border-b-[1px] border-transparent hover:border-red-500 w-fit hover:cursor-pointer ">
                 Tech Jordan
@@ -313,7 +360,6 @@ export default function navbar() {
               <p className="border-b-[1px] border-transparent hover:border-red-500 w-fit hover:cursor-pointer">
                 Networking
               </p>
-              
             </div>
           )}
 
@@ -343,8 +389,10 @@ export default function navbar() {
             </div>
             <div className="w-1/2 flex justify-end h-full pr-2 mt-3">
               <motion.div
-                animate={{ rotate: isoption === "six" ? -45 : 0 , type: "tween" }}
-                typ
+                animate={{
+                  rotate: isoption === "six" ? -45 : 0,
+                  type: "tween",
+                }}
                 onClick={() => {
                   handleOption("six");
                 }}
@@ -353,7 +401,7 @@ export default function navbar() {
               >
                 <FontAwesomeIcon
                   icon={faPlus}
-                  className="h-[38%] mt-6 text-[#d01d1e] hover:cursor-pointer"
+                  className="h-[38%] text-[#d01d1e] hover:cursor-pointer"
                 />
               </motion.div>
             </div>
@@ -363,7 +411,6 @@ export default function navbar() {
               <p className="border-b-[1px] border-transparent hover:border-red-500 w-fit hover:cursor-pointer ">
                 Free Cheat sheets
               </p>
-              
             </div>
           )}
 
@@ -416,14 +463,41 @@ export default function navbar() {
                   <div className="border-white border-[1px] w-10 h-10 flex items-center justify-center rounded-full hover:text-gray-400">
                     <FontAwesomeIcon icon={faLinkedin} className="h-5" />
                   </div>
+                  {isli && (
+                    <div className="border-white border-[1px] w-10 h-10 flex items-center justify-center rounded-full hover:text-gray-400">
+                      <FontAwesomeIcon icon={faPinterest} className="h-5" />
+                    </div>
+                  )}
+
+                  {isli && (
+                    <div className="border-white border-[1px] w-10 h-10 flex items-center justify-center rounded-full hover:text-gray-400">
+                      <FontAwesomeIcon icon={faMicroblog} className="h-5" />
+                    </div>
+                  )}
+
+                  {isli && (
+                    <div className="border-white border-[1px] w-10 h-10 flex items-center justify-center rounded-full hover:text-gray-400">
+                      <FontAwesomeIcon icon={faWifi} className="h-5" />
+                    </div>
+                  )}
+
+                  {isli && (
+                    <div className="border-white border-[1px] w-10 h-10 flex items-center justify-center rounded-full hover:text-gray-400">
+                      <FontAwesomeIcon icon={faMessage} className="h-5" />
+                    </div>
+                  )}
                 </div>
               </div>
 
               <div className="w-[10%] flex justify-end h-full pr-2 mt-12">
-                <div>
+                <div
+                  onClick={() => {
+                    setIsLi(!isli);
+                  }}
+                >
                   <FontAwesomeIcon
                     icon={faPlus}
-                    className=" h-[37%] text-red-600 hover:cursor-pointer"
+                    className=" h-[37%] mt-2 text-red-600 hover:cursor-pointer"
                   ></FontAwesomeIcon>
                 </div>
               </div>
