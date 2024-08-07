@@ -78,19 +78,21 @@ export default function navbar() {
         >
           {" "}
           {/* Menu */}
-          <FontAwesomeIcon icon={faBars} className="w-1/2 h-1/2 " />
+          <FontAwesomeIcon icon={faBars} className="w-1/2 h-1/2 hover:cursor-pointer " />
         </div>
 
         <div className=" w-auto min-w-[33.33%] flex justify-center items-center">
           {" "}
           {/* Logo */}
-          <Image src={logo} alt="logo" className="w-1/2 h-1/2"></Image>
+          <Image
+          
+          src={logo} alt="logo" className="w-1/2 h-1/2 hover:cursor-pointer"></Image>
         </div>
 
         <div className=" w-auto min-w-[33.33%] flex justify-end items-center pr-5 pl-5 sm:pl-0 sm:pr-16  md:pr-16 lg:pr-28 ">
           {" "}
           {/* Signup */}
-          <div className="flex justify-center items-center  rounded-full w-min-[20%] w-fit gap-1 px-1 py-1 lg:px-2 lg:py-[5px]  bg-white sm:bg-transparent lg:bg-white ">
+          <div className="flex justify-center items-center  rounded-full w-min-[20%] w-fit gap-1 px-1 py-1 lg:px-2 lg:py-[5px]  bg-white hover:bg-slate-200 hover:cursor-pointer sm:bg-transparent lg:bg-white ">
             <p className="text-black sm:text-white lg:text-black hidden sm:block text-xs text-nowrap font-semibold">
               Sign In Now
             </p>{" "}
