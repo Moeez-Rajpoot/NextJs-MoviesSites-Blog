@@ -6,7 +6,6 @@ import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faBars,
-  faCross,
   faMagnifyingGlass,
   faMessage,
   faPlus,
@@ -22,7 +21,6 @@ import {
   faLinkedin,
   faMicroblog,
   faPinterest,
-  faTwitter,
   faXTwitter,
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
@@ -78,7 +76,7 @@ export default function navbar() {
         >
           {" "}
           {/* Menu */}
-          <FontAwesomeIcon icon={faBars} className="w-1/2 h-1/2 hover:cursor-pointer " />
+          <FontAwesomeIcon icon={faBars} className="w-1/2 h-1/2 hover:cursor-pointer" />
         </div>
 
         <div className=" w-auto min-w-[33.33%] flex justify-center items-center">
