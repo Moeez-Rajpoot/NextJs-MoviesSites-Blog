@@ -1,7 +1,12 @@
 import logo from "../../public/muo.svg";
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars, faUser } from "@fortawesome/free-solid-svg-icons";
+import {
+  faBars,
+  faMagnifyingGlass,
+  faUser,
+  faXmark,
+} from "@fortawesome/free-solid-svg-icons";
 export default function navbar() {
   return (
     <>
@@ -64,6 +69,25 @@ export default function navbar() {
               Free Movies Streaming{" "}
             </span>
           </li>
+        </div>
+      </div>
+
+      <div className="absolute top-0 left-0 w-[27.5%] h-screen bg-white">
+        <div className="w-full h-[120vh] bg-gray-500 scroll-auto flex flex-col px-10 py-10">
+          <div className="flex justify-center items-center bg-teal-200">
+            <div className="w-1/2 bg-green-300 h-full flex items-start pt-2">
+              <FontAwesomeIcon
+                className="w-[25px] h-[25px] ml-2"
+                icon={faMagnifyingGlass}
+              ></FontAwesomeIcon>
+            </div>
+            <div className="w-1/2 bg-gray-400 h-full flex justify-end pt-2">
+              <FontAwesomeIcon
+                icon={faXmark}
+                className="w-12 h-1/2"
+              ></FontAwesomeIcon>
+            </div>
+          </div>
         </div>
       </div>
     </>
