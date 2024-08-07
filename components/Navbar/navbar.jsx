@@ -14,8 +14,8 @@ import {
   faXmark,
 } from "@fortawesome/free-solid-svg-icons";
 import { motion } from "framer-motion";
-
-import { faUser, faEnvelope } from "@fortawesome/free-regular-svg-icons";
+import { faUser } from "@fortawesome/free-solid-svg-icons";
+import {  faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import {
   faFacebook,
   faInstagram,
@@ -96,7 +96,7 @@ export default function navbar() {
             </p>{" "}
             <FontAwesomeIcon
               icon={faUser}
-              className="rounded-full bg-white lg:bg-black text-black lg:text-white  w-5 h-5 sm:px-1 sm:py-1"
+              className="rounded-full bg-white lg:bg-black text-black lg:text-white  w-3 h-3 sm:px-1 sm:py-1"
             ></FontAwesomeIcon>
           </div>
         </div>
