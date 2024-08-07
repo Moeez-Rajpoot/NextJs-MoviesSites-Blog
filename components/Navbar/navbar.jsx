@@ -387,7 +387,7 @@ export default function navbar() {
                 MORE
               </p>
             </div>
-            <div className="w-1/2 flex justify-end h-full pr-2 mt-3">
+            <div className="w-1/2 flex justify-end h-full mt-6 pr-2 lg:mt-3">
               <motion.div
                 animate={{
                   rotate: isoption === "six" ? -45 : 0,
@@ -401,7 +401,7 @@ export default function navbar() {
               >
                 <FontAwesomeIcon
                   icon={faPlus}
-                  className="h-[38%] text-[#d01d1e] hover:cursor-pointer"
+                  className=" h-[38%] text-[#d01d1e] hover:cursor-pointer"
                 />
               </motion.div>
             </div>
