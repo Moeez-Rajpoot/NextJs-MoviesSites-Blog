@@ -1,6 +1,8 @@
 import Image from "next/image";
 import bgpic from "../public/pic.png";
 import Bar from "../components/bar";
+import Right from "../components/Home/right/right";
+import Left from "../components/Home/left/left";
 
 export default function Home() {
   return (
@@ -74,6 +76,13 @@ export default function Home() {
 
       {/* bar */}
       <Bar />
+      <div className="w-full h-fit pb-96 flex sm:w-[90%] lg:w-[72%]" >
+        <Right/>
+        <Left/>
+
+
+
+      </div>
     </main>
   );
 }
