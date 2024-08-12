@@ -88,13 +88,13 @@ export default function Left() {
 
       {/* Icons and Links */}
       <div className="w-full  h-56  flex flex-col justify-center items-center">
-       <div className="flex gap-2 mt-10 justify-center items-center">
-        <p className="bg-[#262626] text-[#afaeae] px-5 py-2 rounded-md text-xs font-bold">Entertainment</p>
-        <p className="bg-[#262626] text-[#afaeae] px-5 py-2 rounded-md text-xs font-bold">Media Streaming</p>
-        <p className="bg-[#262626] text-[#afaeae] px-5 py-2 rounded-md text-xs font-bold">Youtube</p>
+       <div className="flex flex-col  lg:flex-row gap-2 mt-10 justify-center items-center">
+        <p className="bg-[#262626] mb-2 lg:mb-0 hover:cursor-pointer text-[#afaeae] px-5 py-2 rounded-md text-xs font-bold">Entertainment</p>
+        <p className="bg-[#262626] mb-2 lg:mb-0 hover:cursor-pointer text-[#afaeae] px-5 py-2 rounded-md text-xs font-bold">Media Streaming</p>
+        <p className="bg-[#262626] mb-2 lg:mb-0 hover:cursor-pointer text-[#afaeae] px-5 py-2 rounded-md text-xs font-bold">Youtube</p>
        </div>
 
-       <div className="flex gap-7 mt-5 justify-center items-center">
+       <div className="flex gap-2 lg:gap-7 mt-5 justify-center items-center">
 
        <div className="flex items-center ml-1 text-white hover:cursor-pointer  hover:text-red-700 justify-center h-full">
           <FontAwesomeIcon
@@ -121,7 +121,7 @@ export default function Left() {
 
       </div>
 
-      <p className="cursor-pointer italic text-[#aeaeae] tracking-tighter font-bold text-xs w-full">Readers like you help support MakeUseOf. When you make a purchase using links on our site, we may earn an affiliate commission. <span className="underline">Read More</span>.</p>
+      <p className="cursor-pointer italic mt-3 lg:mt-0 text-[#aeaeae] tracking-tighter font-bold text-xs w-full">Readers like you help support MakeUseOf. When you make a purchase using links on our site, we may earn an affiliate commission. <span className="underline">Read More</span>.</p>
     </div>
   );
 }

@@ -4,7 +4,7 @@ import Bar from "../components/bar";
 import Right from "../components/Home/right/right";
 import Left from "../components/Home/left/left";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faComments, faUser } from "@fortawesome/free-solid-svg-icons";
+import { faArrowDown, faArrowUp, faComments, faShare, faUser } from "@fortawesome/free-solid-svg-icons";
 
 export default function Home() {
   return (
@@ -87,12 +87,12 @@ export default function Home() {
 
       <div className="w-full h-fit pb-96 flex flex-col sm:w-[90%] lg:w-[92%] xl:w-[72%] bg-transparent mt-5">
         <div className="flex justify-between w-full">
-          <div className="flex items-center ml-3 sm:ml-0 text-white hover:cursor-pointer  hover:text-red-700 justify-center h-full">
+          <div className="flex items-center w-full justify-center lg:justify-start ml-3 sm:ml-0 text-white hover:cursor-pointer  hover:text-red-700 h-full">
             <FontAwesomeIcon
               className=" hover:text-red-700 h-8"
               icon={faComments}
             ></FontAwesomeIcon>
-            <p className="text-2xl ml-1 ">Threads</p>
+            <p className="text-2xl ml-1  ">Threads</p>
             <div className="px-2 py-[2px] font-bold text-sm ml-1 rounded-full bg-gray-600">
               1
             </div>
@@ -104,9 +104,9 @@ export default function Home() {
                 Sign In Into Your <span className="text-red-700">MUO</span>{" "}
                 Account
               </p>
-              <div className="rounded-full bg-black ml-1 px-[5px] py-[5px] flex justify-center items-center">
+              <div className="rounded-full bg-white ml-1 px-[5px] py-[5px] flex justify-center items-center">
                 <FontAwesomeIcon
-                  className="text-white h-3 w-3"
+                  className="text-black h-3 w-3"
                   icon={faUser}
                 ></FontAwesomeIcon>
               </div>
@@ -117,18 +117,64 @@ export default function Home() {
           <div className="w-[15%] border-b-2 border-red-700"></div>
           <div className="w-[85%] border-b-2 border-white"></div>
         </div>
-        <p className="text-white text-sm mt-3">
+        <p className="text-white text-sm px-3 lg:px-0 mt-3">
           We want to hear from you! Share your opinions in the thread below and
           remember to keep it respectful.
         </p>
-        <div className="bg-[#0e0e0e] w-[68%] h-24 flex justify-center items-center mt-5">
-          <input placeholder="hellow" className="font-bold text-sm hover:cursor-pointer hover:underline"></input>
-          <div className="rounded-full bg-black ml-1 px-[5px] py-[5px] flex justify-center items-center">
+        <div className="bg-[#0e0e0e] border-2 border-[#303030] w-full  lg:w-[68%] gap-3 h-24 flex justify-start items-center mt-5">
+          <div className="rounded-full bg-[#919191] ml-4 px-[5px] py-[5px] flex justify-center items-center">
             <FontAwesomeIcon
-              className="text-white h-3 w-3"
+              className="text-black  h-6 text-center w-6"
               icon={faUser}
             ></FontAwesomeIcon>
           </div>
+          <input
+            placeholder="Reply / Post"
+            className="rounded-full placeholder:text-sm placeholder:font-semibold placeholder:text-[#95918b] hover:placeholder:opacity-85 py-2 px-3 w-[87%] border-2 border-[#95918b] outline-none h-12 bg-[#282725] "
+          ></input>
+        </div>
+
+        <div className="flex gap-2 mt-4 justify-start items-center">
+          <p>Sort By </p>
+          <select className="bg-[#333333] text-white text-sm font-bold px-1 py-1">
+            <option value="option1">Popular</option>
+            <option value="option2">Oldest</option>
+            <option value="option3">Newest</option>
+          </select>
+        </div>
+
+        <div className="bg-[#0e0e0e] border-2 border-[#303030] w-full lg:w-[68%] gap-3 h-fit flex flex-col justify-start mt-5">
+          <div className="mt-3 h-fit flex gap-3">
+            <div className="rounded-full bg-[#d7b039] h-fit ml-4 px-[5px] py-[5px] flex justify-center items-center">
+              <FontAwesomeIcon
+                className="text-black  h-6 text-center w-6"
+                icon={faUser}
+              ></FontAwesomeIcon>
+            </div>
+            <p className="text-white text-center mt-1 font-semibold ml-2">
+              PAT
+            </p>
+          </div>
+          <div className="w-[98%] ml-2 border-b-2 border-[#555555]"></div>
+          <p className="text-xs text-[#928f8d] pl-3">2024-07-15 23:42:09</p>
+          <p className="text-sm pl-3 leading-tight">
+            I plan to try all of the above. I subscribe to You Tube TV.
+          </p>
+          <div className="flex pl-3 mt-2 mb-3 gap-2 items-center">
+          <p className="bg-[#262626] hover:cursor-pointer hover:opacity-85 text-[#afaeae] px-1 py-1 text-center rounded-md text-xs font-bold"><FontAwesomeIcon icon={faArrowUp} className="h-3 w-3" /> </p>
+
+          <p className="bg-[#262626] hover:cursor-pointer hover:opacity-85 text-[#afaeae] px-1 py-1 text-center rounded-md text-xs font-bold"><FontAwesomeIcon icon={faArrowDown} className="h-3 w-3" /> </p>
+
+          <p className="bg-[#262626] hover:cursor-pointer hover:opacity-85 text-[#afaeae] px-1 py-1 text-center rounded-md text-xs font-bold"><FontAwesomeIcon icon={faShare} className="h-3 w-3" /> </p>
+          </div>
+          
+        </div>
+        <div className="w-full lg:w-[68%] mt-5 border-b-2 border-[#555555]"></div>
+        <div  className="w-full lg:w-[68%] mt-2 flex gap-2 justify-center lg:justify-end items-center">
+          <p className="text-xs text-gray-400 hover:cursor-pointer hover:opacity-85">Terms</p>
+          <p className="text-xs text-gray-400 hover:cursor-pointer hover:opacity-85">Privacy</p>
+          <p className="text-xs text-gray-400 hover:cursor-pointer hover:opacity-85">feedback</p>
+
         </div>
       </div>
     </main>
