@@ -187,7 +187,10 @@ export default function Home() {
       {/* Footer */}
       <Footer />
 
-      <div className="w-full h-10 bg-black"></div>
+      <div className="w-full flex justify-center items-center h-12 bg-black">
+
+        <p className="text-center w-full text-white text-xs">Copyright © 2024 Valnet Inc.</p>
+      </div>
 
 
     </main>

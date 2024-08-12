@@ -12,8 +12,8 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 export default function footer() {
   return (
-    <div className="w-full h-56 flex sm:w-[90%] lg:w-[92%] xl:w-[72%] mt-5">
-      <div className="w-1/2 h-full flex flex-col">
+    <div className="w-full h-fit flex flex-col lg:flex-row mb-10 sm:w-[90%] lg:w-[92%] xl:w-[72%] mt-5">
+      <div className="w-full justify-center items-center lg:justify-start lg:items-start lg:w-1/2 h-full flex flex-col">
         <div className="h-6 mt-5">
           <Image alt="logo1" src={logo1}></Image>
         </div>
@@ -47,12 +47,12 @@ export default function footer() {
           <FontAwesomeIcon icon={faPinterest} />
         </div>
       </div>
-      <div className="w-1/2 h-full ">
-      <div className=" w-full flex justify-end mt-5">
+      <div className="w-full justify-center items-center lg:justify-end lg:items-end lg:w-1/2 h-full ">
+      <div className=" w-full flex justify-center lg:justify-end mt-5">
           <Image className="h-10 w-10" alt="logo1" src={logo2}></Image>
         </div>
 
-        <div className="flex gap-1 mr-2 mt-8 text-xs justify-end items-center">
+        <div className="flex gap-1 mr-2 mt-8 text-xs justify-center lg:justify-end items-center">
           <p className="hover:cursor-pointer hover:text-red-700">
             Advertising
           </p>
@@ -70,7 +70,7 @@ export default function footer() {
           <p className="hover:cursor-pointer hover:text-red-700">Polices</p>
         </div>
 
-        <div className="flex gap-2 mt-8 justify-end items-center">
+        <div className="flex gap-2 mt-8 justify-center lg:justify-end items-center">
           <p className="font-semibold text-xs mr-2"><span className="font-bold">MUO</span> is part of the <span className="font-bold">Valnet Publishing Group</span></p>
 
         
