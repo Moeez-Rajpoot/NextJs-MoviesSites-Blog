@@ -6,7 +6,7 @@ export default function Right() {
   const [techData, setTechData] = useState([]);
   const [pcData, setPcData] = useState([]);
   const [lilNav, setLilNav] = useState("tech");
-  const [trending, setTrending] = useState([]); // Initialize as an array
+  const [trending, setTrending] = useState([]);
 
   useEffect(() => {
     fetch("/data/data.json")
@@ -19,7 +19,7 @@ export default function Right() {
       .then((data) => {
         setTechData(data.techExplained);
         setPcData(data.pcAndMobile);
-        setTrending(data.trending); // Ensure this is an array in your JSON
+        setTrending(data.trending);
       })
       .catch((error) => console.error("Error fetching data:", error));
   }, []);
