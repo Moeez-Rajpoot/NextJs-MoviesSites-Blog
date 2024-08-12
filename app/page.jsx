@@ -6,7 +6,13 @@ import Left from "../components/Home/left/left";
 import Recommended from "../components/Home/Recommended/page";
 import Footer from "../components/Footer/footer";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowDown, faArrowUp, faComments, faShare, faUser } from "@fortawesome/free-solid-svg-icons";
+import {
+  faArrowDown,
+  faArrowUp,
+  faComments,
+  faShare,
+  faUser,
+} from "@fortawesome/free-solid-svg-icons";
 
 export default function Home() {
   return (
@@ -163,20 +169,30 @@ export default function Home() {
             I plan to try all of the above. I subscribe to You Tube TV.
           </p>
           <div className="flex pl-3 mt-2 mb-3 gap-2 items-center">
-          <p className="bg-[#262626] hover:cursor-pointer hover:opacity-85 text-[#afaeae] px-1 py-1 text-center rounded-md text-xs font-bold"><FontAwesomeIcon icon={faArrowUp} className="h-3 w-3" /> </p>
+            <p className="bg-[#262626] hover:cursor-pointer hover:opacity-85 text-[#afaeae] px-1 py-1 text-center rounded-md text-xs font-bold">
+              <FontAwesomeIcon icon={faArrowUp} className="h-3 w-3" />{" "}
+            </p>
 
-          <p className="bg-[#262626] hover:cursor-pointer hover:opacity-85 text-[#afaeae] px-1 py-1 text-center rounded-md text-xs font-bold"><FontAwesomeIcon icon={faArrowDown} className="h-3 w-3" /> </p>
+            <p className="bg-[#262626] hover:cursor-pointer hover:opacity-85 text-[#afaeae] px-1 py-1 text-center rounded-md text-xs font-bold">
+              <FontAwesomeIcon icon={faArrowDown} className="h-3 w-3" />{" "}
+            </p>
 
-          <p className="bg-[#262626] hover:cursor-pointer hover:opacity-85 text-[#afaeae] px-1 py-1 text-center rounded-md text-xs font-bold"><FontAwesomeIcon icon={faShare} className="h-3 w-3" /> </p>
+            <p className="bg-[#262626] hover:cursor-pointer hover:opacity-85 text-[#afaeae] px-1 py-1 text-center rounded-md text-xs font-bold">
+              <FontAwesomeIcon icon={faShare} className="h-3 w-3" />{" "}
+            </p>
           </div>
-          
         </div>
         <div className="w-full lg:w-[68%] mt-5 border-b-2 border-[#555555]"></div>
-        <div  className="w-full lg:w-[68%] mt-2 flex gap-2 justify-center lg:justify-end items-center">
-          <p className="text-xs text-gray-400 hover:cursor-pointer hover:opacity-85">Terms</p>
-          <p className="text-xs text-gray-400 hover:cursor-pointer hover:opacity-85">Privacy</p>
-          <p className="text-xs text-gray-400 hover:cursor-pointer hover:opacity-85">feedback</p>
-
+        <div className="w-full lg:w-[68%] mt-2 flex gap-2 justify-center lg:justify-end items-center">
+          <p className="text-xs text-gray-400 hover:cursor-pointer hover:opacity-85">
+            Terms
+          </p>
+          <p className="text-xs text-gray-400 hover:cursor-pointer hover:opacity-85">
+            Privacy
+          </p>
+          <p className="text-xs text-gray-400 hover:cursor-pointer hover:opacity-85">
+            feedback
+          </p>
         </div>
       </div>
 
@@ -188,11 +204,10 @@ export default function Home() {
       <Footer />
 
       <div className="w-full flex justify-center items-center h-12 bg-black">
-
-        <p className="text-center w-full text-white text-xs">Copyright © 2024 Valnet Inc.</p>
+        <p className="text-center w-full text-white text-xs">
+          Copyright © 2024 Valnet Inc.
+        </p>
       </div>
-
-
     </main>
   );
 }
