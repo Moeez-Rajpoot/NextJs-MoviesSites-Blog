@@ -26,7 +26,7 @@ export default function Left() {
   }, []);
 
   return (
-    <div className="flex flex-col order-1 w-[70%] h-fit">
+    <div className="flex flex-col order-1 w-full items-center lg:items-start px-4 lg:px-0 lg:w-[70%] h-fit">
       {/* Quick Links */}
       <div className="flex gap-2 mt-5 justify-start items-center w-full">
         <FontAwesomeIcon className="text-red-700 h-5" icon={faBolt} />
@@ -46,8 +46,8 @@ export default function Left() {
       </div>
 
       {/* Key Takeaways */}
-      <div className="flex gap-2 mt-5 justify-start items-center w-full">
-        <FontAwesomeIcon className="text-red-700 h-5" icon={faList} />
+      <div className="flex gap-2 mt-5 justify-start items-center  w-full">
+        <FontAwesomeIcon className="text-red-700 h-5 ml-1 sm:ml-2 md:ml-3 lg:ml-0" icon={faList} />
         <p className="text-white font-bold text-[16px]">KEY TAKEAWAYS</p>
       </div>
       <div className="w-[97.5%] bg-[#333233] mt-5 pb-3 h-fit rounded-sm">

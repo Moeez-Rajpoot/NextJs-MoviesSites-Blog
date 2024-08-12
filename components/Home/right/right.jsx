@@ -6,6 +6,7 @@ export default function Right() {
   const [techData, setTechData] = useState([]);
   const [pcData, setPcData] = useState([]);
   const [lilNav, setLilNav] = useState("tech");
+  const [trending, setTrending] = useState([]); // Initialize as an array
 
   useEffect(() => {
     fetch("/data/data.json")
@@ -18,6 +19,7 @@ export default function Right() {
       .then((data) => {
         setTechData(data.techExplained);
         setPcData(data.pcAndMobile);
+        setTrending(data.trending); // Ensure this is an array in your JSON
       })
       .catch((error) => console.error("Error fetching data:", error));
   }, []);
@@ -27,7 +29,7 @@ export default function Right() {
   }
 
   return (
-    <div className="w-[30%] hidden lg:block  order-2 bg-black h-screen">
+    <div className="w-[30%] hidden lg:block order-2 bg-transparent h-[8000px]">
       <div className="bg-[#242524] flex rounded-md flex-col w-[94%] ml-5 mt-5 h-[380px]">
         <div className="flex">
           <div className="h-[11px] w-1/2 bg-red-700"></div>
@@ -69,7 +71,7 @@ export default function Right() {
                     className="object-cover rounded-md w-[105px] h-[70px] max-w-60 hover:opacity-90 hover:cursor-pointer"
                   />
                 </div>
-                <div className="w-2/3 flex flex-col justify-center pl-5">
+                <div className="w-2/3 flex flex-col justify-center pl-5 lg:pl-7">
                   <p className="text-gray-200 text-sm font-semibold truncate-3-lines hover:underline hover:cursor-pointer">
                     {data.title}
                   </p>
@@ -77,7 +79,7 @@ export default function Right() {
                 </div>
               </div>
             ))}
-            {lilNav === "pc" &&
+          {lilNav === "pc" &&
             pcData.map((data, index) => (
               <div key={index} className="flex w-full h-fit mt-3">
                 <div className="w-1/3">
@@ -89,7 +91,7 @@ export default function Right() {
                     className="object-cover rounded-md w-[105px] h-[70px] max-w-60 hover:opacity-90 hover:cursor-pointer"
                   />
                 </div>
-                <div className="w-2/3 flex flex-col justify-center pl-5">
+                <div className="w-2/3 flex flex-col justify-center pl-5 lg:pl-7">
                   <p className="text-gray-200 text-sm font-semibold truncate-3-lines hover:underline hover:cursor-pointer">
                     {data.title}
                   </p>
@@ -97,8 +99,41 @@ export default function Right() {
                 </div>
               </div>
             ))}
-            <button className="w-full h-9 mt-3 rounded-md bg-red-700 text-sm text-white font-bold">SEE MORE</button>
+          <button className="w-full h-9 mt-3 rounded-md bg-red-700 text-sm text-white font-bold">
+            SEE MORE
+          </button>
         </div>
+      </div>
+
+      {/* Trending now */}
+      <div className="bg-transparent sticky top-24  flex rounded-md flex-col w-[94%] ml-5 mt-5 h-full">
+       <div className=" sticky top-20">
+       <div className="flex flex-col border-b-[3px] border-gray-400">
+          <h1 className="text-xl font-bold text-[#b7b4b5]">TRENDING NOW</h1>
+        </div>
+
+        <div className="flex flex-col mt-4 px-3 w-full h-fit">
+          {trending.map((data, index) => (
+            <div key={index} className="flex w-full h-fit mt-3">
+              <div className="w-1/3">
+                <Image
+                  src={data.link}
+                  alt="icon"
+                  width={150}
+                  height={150}
+                  className="object-cover rounded-md w-[105px] h-[70px] max-w-60 hover:opacity-90 hover:cursor-pointer"
+                />
+              </div>
+              <div className="w-2/3 flex flex-col justify-center pl-5 lg:pl-7">
+                <p className="text-gray-200 text-sm font-semibold truncate-3-lines hover:underline hover:cursor-pointer">
+                  {data.title}
+                </p>
+                <p className="text-gray-400 font-bold text-xs">{data.date}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+       </div>
       </div>
     </div>
   );

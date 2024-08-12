@@ -77,7 +77,7 @@ export default function Home() {
       {/* bar */}
       <Bar />
       <div className="w-full h-fit pb-96 flex sm:w-[90%] lg:w-[92%] xl:w-[72%]" >
-        <Right/>
+        <Right className/>
         <Left/>
 
 

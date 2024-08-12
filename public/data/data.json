@@ -21,7 +21,7 @@
     {
       "number": "1.",
       "link": "https://www.youtube.com",
-      "image" : "https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2024/05/youtube-free-movies.jpeg",
+      "image": "https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2024/05/youtube-free-movies.jpeg",
       "heading": "YouTube",
       "subtexts": [
         "YouTube needs no introduction. It's one of the most popular free video hosting sites for watching videos online.",
@@ -33,7 +33,7 @@
     {
       "number": "2.",
       "link": "https://www.crackle.com",
-      "image" : "https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2024/05/crackle-homepage.jpeg",
+      "image": "https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2024/05/crackle-homepage.jpeg",
       "heading": "Crackle",
       "subtexts": [
         "Crackle is one of the best free online movie streaming sites available. It doesn't ask you to sign up for it, and the fact that Sony Pictures owns it gives the site credibility.",
@@ -43,7 +43,7 @@
     {
       "number": "3.",
       "link": "https://tubitv.com",
-      "image" : "https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2024/05/tubi-homepage.jpeg",
+      "image": "https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2024/05/tubi-homepage.jpeg",
       "heading": "Tubi",
       "subtexts": [
         "Tubi doesn't ask you to sign up to enjoy its services. The streaming site lets you access an array of content: Tubi originals, movies, shows, and docuseries⁠—all for free.Everything is neatly organized by genre, and there's even a section for kids' content.",
@@ -53,7 +53,7 @@
     {
       "number": "4.",
       "link": "https://pluto.tv",
-      "image" : "https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2024/05/pluto-homepage.jpeg",
+      "image": "https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2024/05/pluto-homepage.jpeg",
       "heading": "Pluto",
       "subtexts": [
         "Pluto is a free streaming service with great live content. The streaming site boasts exclusive content that's not available on other streaming sites.You do get commercial breaks, though, just like regular network television.",
@@ -63,7 +63,7 @@
     {
       "number": "5.",
       "link": "https://www.xumo.tv",
-      "image" : "https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2024/05/zumoplay-free-movie-page.jpeg",
+      "image": "https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2024/05/zumoplay-free-movie-page.jpeg",
       "heading": "XUMO Play",
       "subtexts": [
         "XUMO Play is a free streaming platform for live and on-demand TV. It doesn't require you to sign up and gives you access to over 190 channels.",
@@ -75,7 +75,7 @@
     {
       "number": "6.",
       "link": "https://fawesome.tv",
-      "image" : "https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2023/07/fawesome-homepage.jpg",
+      "image": "https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2023/07/fawesome-homepage.jpg",
       "heading": "Fawesome",
       "subtexts": [
         "Fawesome, or Fawesome TV, stands for free awesome movies and TV shows. And, as you can imagine, it's free. It also has no sign-up requirements and needs no subscriptions.",
@@ -85,7 +85,7 @@
     {
       "number": "7.",
       "link": "https://wetv.com",
-      "image" : "https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2023/07/wetv-vip-homepage.jpg",
+      "image": "https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2023/07/wetv-vip-homepage.jpg",
       "heading": "Tencent Video",
       "subtexts": [
         "Tencent Video, also called WeTV VIP, offers a library full of features, both popular and original content, under every genre you can imagine.The catalog is extensive, so if you're in the mood for some Asian shows or movies, that's where to find it.Believe it or not, it's also a great anime streaming service if that's what you feel like watching.",
@@ -96,7 +96,7 @@
     {
       "number": "8.",
       "link": "https://wetv.com",
-      "image" : "https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2023/07/wetv-homepage.jpg",
+      "image": "https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2023/07/wetv-homepage.jpg",
       "heading": "WeTV",
       "subtexts": [
         "You can think of WeTV as a double-whammy. It turns out WeTV is a popular name for a streaming service.So, if you search for the platform by name, you might come across the above-mentioned one, with a library full of Asian features, or this one, which is American through and through.",
@@ -107,7 +107,7 @@
     {
       "number": "9.",
       "link": "https://www.popcornflix.com",
-      "image" : "https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2024/05/popcornflix-homepage.jpeg",
+      "image": "https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2024/05/popcornflix-homepage.jpeg",
       "heading": "PopCornFlix",
       "subtexts": [
         "Popcornflix is an excellent source for free TV shows and movies. Content ranges from obscure titles to popular blockbusters of the past.Fans of 80s and 90s films will find a plethora of fan favorites.",
@@ -118,7 +118,7 @@
     {
       "number": "10.",
       "link": "https://gem.cbc.ca",
-      "image" : "https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2023/07/cbc-gem-homepage.jpg",
+      "image": "https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2023/07/cbc-gem-homepage.jpg",
       "heading": "CBC Gem",
       "subtexts": [
         "CBC Gem is a Canadian streaming service with a vast catalog of movies and shows.If you try to view the content outside Canada, a pop-up says the content isn't available. Fortunately, there are ways to bypass internet restrictions, including using a VPN.",
@@ -153,7 +153,7 @@
     },
     {
       "title": "The 5 Best Mac Diff Tools to Compare and Merge Files",
-      "link":"https://static1.makeuseofimages.com/wordpress/wp-content/uploads/wm/2024/08/macbook-air-running-homebrew-with-a-rubik-s-cube-and-a-monitor-in-the-background-1.jpg",
+      "link": "https://static1.makeuseofimages.com/wordpress/wp-content/uploads/wm/2024/08/macbook-air-running-homebrew-with-a-rubik-s-cube-and-a-monitor-in-the-background-1.jpg",
       "date": "16 hours ago"
     },
     {
@@ -165,20 +165,17 @@
   "trending": [
     {
       "title": "These 4 Features Are Turning Spotify Into a New Social Media Platform",
-      "heading": "A woman listening to music with headphones and the Spotify logo on her phone screen.",
-      "subtext": "These 4 Features Are Turning Spotify Into a New Social Media Platform",
+      "link": "https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2024/08/two-smartphones-one-with-the-localsend-logo-and-the-other-showing-the-app-s-interface.jpg",
       "date": "2 days ago"
     },
     {
       "title": "Why the PS5 DualSense Edge Controller Was Worth Every Penny",
-      "heading": "A PS5 DualSense Edge Controller on a surface with some glowing rings around it.",
-      "subtext": "Why the PS5 DualSense Edge Controller Was Worth Every Penny",
+      "link": "https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2024/08/a-person-playing-fortnite-on-a-chromebook.jpg",
       "date": "3 days ago"
     },
     {
       "title": "Why I Use Quora's Poe AI Instead of ChatGPT",
-      "heading": "robots sitting in a meeting with the quora poe logo in the center",
-      "subtext": "Why I Use Quora's Poe AI Instead of ChatGPT",
+      "link": "https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2024/08/smart-home-control-interface.jpg",
       "date": "5 days ago"
     }
   ]
