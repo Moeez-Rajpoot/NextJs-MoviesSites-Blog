@@ -3,6 +3,7 @@ import bgpic from "../public/pic.png";
 import Bar from "../components/bar";
 import Right from "../components/Home/right/right";
 import Left from "../components/Home/left/left";
+import Recommended from "../components/Home/Recommended/page";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowDown, faArrowUp, faComments, faShare, faUser } from "@fortawesome/free-solid-svg-icons";
 
@@ -85,7 +86,7 @@ export default function Home() {
 
       {/* Reply and Comment Section*/}
 
-      <div className="w-full h-fit pb-96 flex flex-col sm:w-[90%] lg:w-[92%] xl:w-[72%] bg-transparent mt-5">
+      <div className="w-full h-fit flex flex-col sm:w-[90%] lg:w-[92%] xl:w-[72%] bg-transparent mt-5">
         <div className="flex justify-between w-full">
           <div className="flex items-center w-full justify-center lg:justify-start ml-3 sm:ml-0 text-white hover:cursor-pointer  hover:text-red-700 h-full">
             <FontAwesomeIcon
@@ -177,6 +178,12 @@ export default function Home() {
 
         </div>
       </div>
+
+      {/* Recommended Component*/}
+
+      <Recommended />
+
+
     </main>
   );
 }
