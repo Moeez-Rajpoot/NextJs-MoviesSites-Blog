@@ -3,6 +3,8 @@ import bgpic from "../public/pic.png";
 import Bar from "../components/bar";
 import Right from "../components/Home/right/right";
 import Left from "../components/Home/left/left";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faComments, faUser } from "@fortawesome/free-solid-svg-icons";
 
 export default function Home() {
   return (
@@ -76,12 +78,58 @@ export default function Home() {
 
       {/* bar */}
       <Bar />
-      <div className="w-full h-fit pb-96 flex sm:w-[90%] lg:w-[92%] xl:w-[72%]" >
-        <Right className/>
-        <Left/>
+      <div className="w-full h-fit flex sm:w-[90%] lg:w-[92%] xl:w-[72%]">
+        <Right className />
+        <Left />
+      </div>
 
+      {/* Reply and Comment Section*/}
 
+      <div className="w-full h-fit pb-96 flex flex-col sm:w-[90%] lg:w-[92%] xl:w-[72%] bg-transparent mt-5">
+        <div className="flex justify-between w-full">
+          <div className="flex items-center ml-3 sm:ml-0 text-white hover:cursor-pointer  hover:text-red-700 justify-center h-full">
+            <FontAwesomeIcon
+              className=" hover:text-red-700 h-8"
+              icon={faComments}
+            ></FontAwesomeIcon>
+            <p className="text-2xl ml-1 ">Threads</p>
+            <div className="px-2 py-[2px] font-bold text-sm ml-1 rounded-full bg-gray-600">
+              1
+            </div>
+          </div>
 
+          <div className="w-[33.33%] hidden lg:block  h-full">
+            <div className="flex gap-1 justify-end mr-1 items-center h-full">
+              <p className="font-bold text-sm hover:cursor-pointer hover:underline ">
+                Sign In Into Your <span className="text-red-700">MUO</span>{" "}
+                Account
+              </p>
+              <div className="rounded-full bg-black ml-1 px-[5px] py-[5px] flex justify-center items-center">
+                <FontAwesomeIcon
+                  className="text-white h-3 w-3"
+                  icon={faUser}
+                ></FontAwesomeIcon>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="flex mt-5 w-full">
+          <div className="w-[15%] border-b-2 border-red-700"></div>
+          <div className="w-[85%] border-b-2 border-white"></div>
+        </div>
+        <p className="text-white text-sm mt-3">
+          We want to hear from you! Share your opinions in the thread below and
+          remember to keep it respectful.
+        </p>
+        <div className="bg-[#0e0e0e] w-[68%] h-24 flex justify-center items-center mt-5">
+          <input placeholder="hellow" className="font-bold text-sm hover:cursor-pointer hover:underline"></input>
+          <div className="rounded-full bg-black ml-1 px-[5px] py-[5px] flex justify-center items-center">
+            <FontAwesomeIcon
+              className="text-white h-3 w-3"
+              icon={faUser}
+            ></FontAwesomeIcon>
+          </div>
+        </div>
       </div>
     </main>
   );
