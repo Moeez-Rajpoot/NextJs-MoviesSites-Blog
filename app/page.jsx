@@ -4,6 +4,7 @@ import Bar from "../components/bar";
 import Right from "../components/Home/right/right";
 import Left from "../components/Home/left/left";
 import Recommended from "../components/Home/Recommended/page";
+import Footer from "../components/Footer/footer";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowDown, faArrowUp, faComments, faShare, faUser } from "@fortawesome/free-solid-svg-icons";
 
@@ -182,6 +183,11 @@ export default function Home() {
       {/* Recommended Component*/}
 
       <Recommended />
+
+      {/* Footer */}
+      <Footer />
+
+      <div className="w-full h-10 bg-black"></div>
 
 
     </main>

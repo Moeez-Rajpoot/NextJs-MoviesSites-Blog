@@ -15,7 +15,7 @@ export default function page() {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 h-auto mt-3">
         {cardContents.map((card, index) => (
           <div key={index} className="flex relative flex-col hover:cursor-pointer bg-[#333333] rounded-md p-4">
-            <div className="w-full hover:opacity-85 hover:cursor-pointer h-48 relative">
+            <div className="w-full hover:opacity-85 hover:cursor-pointer h-52 relative">
               <Image
                 src={card.link}
                 alt={card.title}
@@ -29,8 +29,8 @@ export default function page() {
             <p className="text-sm mb-10 text-[#b1afab]">{card.description}</p>
 
             <div className="absolute bottom-3 right-0 w-full flex  items-center">
-                <p className="w-1/2 text-[#b1a99f] text-xs flex justify-start pl-3 ">{card.date}</p>
-                <p className="w-1/2 text-[#b1a99f] text-xs flex justify-end pr-3  ">
+                <p className="w-1/2 text-[#b1a99f] text-xs flex justify-start pl-4 ">{card.date}</p>
+                <p className="w-1/2 text-[#b1a99f] text-xs flex justify-end pr-4  ">
                 <FontAwesomeIcon icon={faMessage} className="mr-1" />
                 {card.views}
                 </p>
