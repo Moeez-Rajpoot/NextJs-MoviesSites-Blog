@@ -28,5 +28,15 @@ module.exports = {
         },
       });
     },
+    function ({ addUtilities }) {
+      addUtilities({
+        '.truncate-3-lines': {
+          overflow: 'hidden',
+          display: '-webkit-box',
+          '-webkit-line-clamp': '3',
+          '-webkit-box-orient': 'vertical',
+        },
+      });
+    },
   ],
 };

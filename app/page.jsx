@@ -60,7 +60,7 @@ export default function Home() {
         </p>
       </div>
       {/* Image Section */}
-      <div className="w-full sm:w-[90%] lg:w-[72%] h-[200px] sm:h-[320px] lg:h-[610px] relative mt-5 bg-white flex flex-col justify-center overflow-hidden items-center">
+      <div className="w-full sm:w-[90%] lg:w-[92%] xl:w-[72%] h-[200px] sm:h-[320px] lg:h-[610px] relative mt-5 bg-white flex flex-col justify-center overflow-hidden items-center">
         <Image
           src={bgpic}
           alt="A person holding a remote and choosing between different screens"
@@ -76,7 +76,7 @@ export default function Home() {
 
       {/* bar */}
       <Bar />
-      <div className="w-full h-fit pb-96 flex sm:w-[90%] lg:w-[72%]" >
+      <div className="w-full h-fit pb-96 flex sm:w-[90%] lg:w-[92%] xl:w-[72%]" >
         <Right/>
         <Left/>
 
