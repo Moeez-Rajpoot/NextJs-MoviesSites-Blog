@@ -1,9 +1,10 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import { faBolt, faList } from "@fortawesome/free-solid-svg-icons";
+import { faBolt, faList, faPlug, faPlus } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
-
+import { faUserPlus } from "@fortawesome/free-solid-svg-icons";
+import { faFacebook, faWhatsapp, faXTwitter } from "@fortawesome/free-brands-svg-icons";
 export default function Left() {
   const [navLinks, setNavLinks] = useState([]);
   const [keyTakeaways, setkeyTakeaways] = useState([]);
@@ -84,6 +85,43 @@ export default function Left() {
           ))}
         </div>
       ))}
+
+      {/* Icons and Links */}
+      <div className="w-full  h-56  flex flex-col justify-center items-center">
+       <div className="flex gap-2 mt-10 justify-center items-center">
+        <p className="bg-[#262626] text-[#afaeae] px-5 py-2 rounded-md text-xs font-bold">Entertainment</p>
+        <p className="bg-[#262626] text-[#afaeae] px-5 py-2 rounded-md text-xs font-bold">Media Streaming</p>
+        <p className="bg-[#262626] text-[#afaeae] px-5 py-2 rounded-md text-xs font-bold">Youtube</p>
+       </div>
+
+       <div className="flex gap-7 mt-5 justify-center items-center">
+
+       <div className="flex items-center ml-1 text-white hover:cursor-pointer  hover:text-red-700 justify-center h-full">
+          <FontAwesomeIcon
+            className=" hover:text-red-700"
+            icon={faUserPlus}
+          ></FontAwesomeIcon>
+          <p className="text-xs ml-2 ">Follow</p>
+        </div>
+        <div className="border-r-2 h-7 w-1 flex justify-evenly items-center border-red-50 border-opacity-25 ml-1"></div>
+
+        <p className="bg-[#262626] hover:cursor-pointer hover:opacity-85 text-[#afaeae] px-2 py-2 text-center rounded-md text-xs font-bold"><FontAwesomeIcon icon={faFacebook} className="h-5 w-5" /> </p>
+        <p className="bg-[#262626] hover:cursor-pointer hover:opacity-85 text-[#afaeae] px-2 py-2 text-center rounded-md text-xs font-bold"><FontAwesomeIcon icon={faXTwitter} className="h-5 w-5" /> </p>
+
+        <p className="bg-[#262626] hover:cursor-pointer hover:opacity-85 text-[#afaeae] px-2 py-2 text-center rounded-md text-xs font-bold"><FontAwesomeIcon icon={faWhatsapp} className="h-5 w-5" /> </p>
+
+        <p className="bg-[#262626] hover:cursor-pointer hover:opacity-85 text-[#afaeae] px-2 py-2 text-center rounded-md text-xs font-bold"><FontAwesomeIcon icon={faPlus} className="h-5 w-5" /> </p>
+         
+
+
+
+       </div>
+
+
+
+      </div>
+
+      <p className="cursor-pointer italic text-[#aeaeae] tracking-tighter font-bold text-xs w-full">Readers like you help support MakeUseOf. When you make a purchase using links on our site, we may earn an affiliate commission. <span className="underline">Read More</span>.</p>
     </div>
   );
 }

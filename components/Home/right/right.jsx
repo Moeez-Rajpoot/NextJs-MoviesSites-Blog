@@ -29,7 +29,7 @@ export default function Right() {
   }
 
   return (
-    <div className="w-[30%] hidden lg:block order-2 bg-transparent h-[8000px]">
+    <div className="w-[30%] hidden lg:block order-2 bg-transparent h-[8400px]">
       <div className="bg-[#242524] flex rounded-md flex-col w-[94%] ml-5 mt-5 h-[380px]">
         <div className="flex">
           <div className="h-[11px] w-1/2 bg-red-700"></div>
