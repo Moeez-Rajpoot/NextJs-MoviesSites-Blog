@@ -2,7 +2,7 @@
 
 ## Live Site
 
-Check out the live site [here](https://next-js-movies-sites-blog.vercel.app/).
+Check out the live site [here](https://next-js-movies-sites-blog.vercel.app/)
 
 
 ![Image1](https://github.com/Moeez-Rajpoot/NextJs-MoviesSites-Blog/blob/main/Images/image1.png)
