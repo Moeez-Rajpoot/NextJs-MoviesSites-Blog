@@ -24,7 +24,7 @@ import {
   faXTwitter,
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
-export default function navbar() {
+export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [isoption, setIsOption] = useState("");
   const [issearch, setIsSearch] = useState(false);
