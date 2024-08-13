@@ -18,7 +18,7 @@ Check out the live site [here](https://next-js-movies-sites-blog.vercel.app/).
 
 ## Overview
 
-This project is a movie site built with Next.js. It showcases various movies with details and images.
+This project is a movie site built with Next.js. It showcases various movies with details and images its a full landing page.
 
 ## Features
 
