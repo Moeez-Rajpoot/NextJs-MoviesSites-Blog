@@ -1,5 +1,10 @@
 # Next.js Movies Site
 
+## Live Site
+
+Check out the live site [here](https://next-js-movies-sites-blog.vercel.app/).
+
+
 ![Image1](https://github.com/Moeez-Rajpoot/NextJs-MoviesSites-Blog/blob/main/Images/image1.png)
 ![Image2](https://github.com/Moeez-Rajpoot/NextJs-MoviesSites-Blog/blob/main/Images/image2.png)
 ![Image3](https://github.com/Moeez-Rajpoot/NextJs-MoviesSites-Blog/blob/main/Images/image3.png)
@@ -9,9 +14,7 @@
 ![Image7](https://github.com/Moeez-Rajpoot/NextJs-MoviesSites-Blog/blob/main/Images/image7.png)
 ![Image8](https://github.com/Moeez-Rajpoot/NextJs-MoviesSites-Blog/blob/main/Images/image8.png)
 
-## Live Site
 
-Check out the live site [here](https://next-js-movies-sites-blog.vercel.app/).
 
 ## Overview
 
