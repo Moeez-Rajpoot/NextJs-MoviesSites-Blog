@@ -7,7 +7,7 @@ import React from "react";
 export default function page() {
   return (
     <div className="w-full flex flex-col sm:w-[90%] lg:w-[92%] xl:w-[72%] bg-transparent h-auto mt-5">
-      <h1 className="flex items-center uppercase text-2xl font-bold">
+      <h1 className="flex text-white items-center uppercase text-2xl font-bold">
         <FontAwesomeIcon className="text-white mr-2" icon={faFire} />
         Recommended
       </h1>

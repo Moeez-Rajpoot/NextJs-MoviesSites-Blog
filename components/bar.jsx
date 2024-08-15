@@ -8,7 +8,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 export default function bar() {
   return (
-    <div className=" relative h-14 flex w-full sm:w-[90%] lg:w-[72%] ">
+    <div className=" relative h-14 flex w-full text-white sm:w-[90%] lg:w-[72%] ">
       <div className="hidden sm:w-1/2 lg:w-[33.33%] h-full sm:flex items-center ">
         <Image
           alt="icon"

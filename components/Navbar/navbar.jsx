@@ -76,7 +76,7 @@ export default function Navbar() {
         >
           {" "}
           {/* Menu */}
-          <FontAwesomeIcon icon={faBars} className="w-1/2 h-1/2 hover:cursor-pointer" />
+          <FontAwesomeIcon icon={faBars} className="w-1/2 h-1/2 hover:cursor-pointer text-white" />
         </div>
 
         <div className=" w-auto min-w-[33.33%] flex justify-center items-center">
@@ -111,7 +111,7 @@ export default function Navbar() {
           type: "tween",
         },
       }}
-      className="fixed top-0 left-0 z-20 w-full md:w-[26rem] h-screen bg-[#242424] hide-scrollbar scroll-smooth overflow-y-scroll"
+      className="fixed top-0 left-0 z-20 w-full md:w-[26rem] h-screen bg-[#242424] text-white hide-scrollbar scroll-smooth overflow-y-scroll"
     >
       <div className="w-full h-[145vh]  flex flex-col px-6 py-6  md:px-10 md:py-10">
         <div className="flex justify-center items-center ">

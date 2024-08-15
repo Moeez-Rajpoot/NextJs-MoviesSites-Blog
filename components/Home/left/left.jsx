@@ -36,7 +36,7 @@ export default function Left() {
   }, []);
 
   return (
-    <div className="flex flex-col order-1 w-full items-center lg:items-start px-4 lg:px-0 lg:w-[70%] h-fit">
+    <div className="flex flex-col text-white order-1 w-full items-center lg:items-start px-4 lg:px-0 lg:w-[70%] h-fit">
       {/* Quick Links */}
       <div className="flex gap-2 mt-5 justify-start items-center w-full">
         <FontAwesomeIcon className="text-red-700 h-5" icon={faBolt} />
@@ -99,7 +99,7 @@ export default function Left() {
       ))}
 
       {/* Icons and Links */}
-      <div className="w-full  h-56  flex flex-col justify-center items-center">
+      <div className="w-full text-white  h-56  flex flex-col justify-center items-center">
         <div className="flex flex-col  lg:flex-row gap-2 mt-10 justify-center items-center">
           <p className="bg-[#262626] mb-2 lg:mb-0 hover:cursor-pointer text-[#afaeae] px-5 py-2 rounded-md text-xs font-bold">
             Entertainment

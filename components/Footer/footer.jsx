@@ -18,7 +18,7 @@ export default function footer() {
           <Image alt="logo1" src={logo1}></Image>
         </div>
 
-        <div className="flex gap-1 mt-8 text-xs justify-start items-center">
+        <div className="flex gap-1 text-white mt-8 text-xs justify-start items-center">
           <p className="hover:cursor-pointer hover:text-red-700">
             Join our Team
           </p>
@@ -36,7 +36,7 @@ export default function footer() {
           <p className="hover:cursor-pointer hover:text-red-700">Contact Us</p>
         </div>
 
-        <div className="flex gap-2 mt-8 justify-start items-center">
+        <div className="flex gap-2 text-white mt-8 justify-start items-center">
           <p className="font-semibold mr-2">Follow Us </p>
 
           <FontAwesomeIcon icon={faYoutube} />
@@ -47,7 +47,7 @@ export default function footer() {
           <FontAwesomeIcon icon={faPinterest} />
         </div>
       </div>
-      <div className="w-full justify-center items-center lg:justify-end lg:items-end lg:w-1/2 h-full ">
+      <div className="w-full text-white justify-center items-center lg:justify-end lg:items-end lg:w-1/2 h-full ">
       <div className=" w-full flex justify-center lg:justify-end mt-5">
           <Image className="h-10 w-10" alt="logo1" src={logo2}></Image>
         </div>
